@@ -13,12 +13,14 @@ export function renderApp(root, game, handlers, message = "") {
       <div class="keyboard">
         ${renderKeyboard()}
       </div>
-      <button class="restart" data-key="restart">Restart</button>
+      <button type="button" class="restart" data-key="restart">Restart</button>
     </section>
   `;
 
   root.querySelectorAll("[data-key]").forEach((button) => {
-    button.addEventListener("click", () => {
+    button.addEventListener("pointerdown", (event) => {
+      event.preventDefault();
+
       const key = button.dataset.key;
 
       if (key === "restart") {
@@ -59,11 +61,11 @@ function renderKeyboard() {
   return KEY_ROWS.map((row, index) => {
     const letterButtons = row
       .split("")
-      .map((letter) => `<button data-key="${letter}">${letter}</button>`)
+      .map((letter) => `<button type="button" data-key="${letter}">${letter}</button>`)
       .join("");
 
     if (index === 2) {
-      return `<div class="key-row"><button class="wide" data-key="Enter">Go</button>${letterButtons}<button class="wide" data-key="Backspace">Del</button></div>`;
+      return `<div class="key-row"><button type="button" class="wide" data-key="Enter">Go</button>${letterButtons}<button type="button" class="wide" data-key="Backspace">Del</button></div>`;
     }
 
     return `<div class="key-row">${letterButtons}</div>`;
