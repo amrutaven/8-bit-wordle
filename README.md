@@ -1,6 +1,7 @@
 # 8-Bit Wordle
 # By Amruta Venkatesh
 
+[Play Here!](https://amrutaven.github.io/8-bit-wordle/)
 A small browser-based Wordle-style game built with vanilla JavaScript, HTML, and CSS. The app picks a random five-letter word, lets the player make up to six guesses, and scores each guess with correct, present, and absent letter states.
 
 The interface is styled like a retro 8-bit computer game, with a CRT-inspired panel, pixel fonts, scanline texture, square tiles, chunky shadows, and high-contrast arcade colors.
