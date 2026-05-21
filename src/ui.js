@@ -5,7 +5,7 @@ const KEY_ROWS = ["QWERTYUIOP", "ASDFGHJKL", "ZXCVBNM"];
 export function renderApp(root, game, handlers, message = "") {
   root.innerHTML = `
     <section class="game">
-      <h1>8-Bit Wordle</h1>
+      <h1><span>8-Bit</span> Wordle</h1>
       <p class="message">${message}</p>
       <div class="board">
         ${renderBoard(game)}
@@ -63,7 +63,7 @@ function renderKeyboard() {
       .join("");
 
     if (index === 2) {
-      return `<div class="key-row"><button class="wide" data-key="Enter">Enter</button>${letterButtons}<button class="wide" data-key="Backspace">Backspace</button></div>`;
+      return `<div class="key-row"><button class="wide" data-key="Enter">Go</button>${letterButtons}<button class="wide" data-key="Backspace">Del</button></div>`;
     }
 
     return `<div class="key-row">${letterButtons}</div>`;

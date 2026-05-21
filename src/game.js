@@ -41,6 +41,7 @@ export function submitGuess(game) {
 
   if (game.currentGuess === game.answer) {
     game.status = "won";
+    game.currentGuess = "";
     return "You won!";
   }
 
