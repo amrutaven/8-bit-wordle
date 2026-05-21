@@ -3,6 +3,8 @@
 
 A small browser-based Wordle-style game built with vanilla JavaScript, HTML, and CSS. The app picks a random five-letter word, lets the player make up to six guesses, and scores each guess with correct, present, and absent letter states.
 
+The interface is styled like a retro 8-bit computer game, with a CRT-inspired panel, pixel fonts, scanline texture, square tiles, chunky shadows, and high-contrast arcade colors.
+
 ## How to Run Locally
 
 From the project folder, start a local static server:
@@ -29,8 +31,9 @@ python3 -m http.server 8000
 - A scoring function that compares each guess against the answer and marks letters as `correct`, `present`, or `absent`.
 - A UI renderer that builds the board, keyboard, message area, and restart button.
 - Support for both physical keyboard input and on-screen keyboard clicks.
-- A final keyboard row with `Enter` before the letters and `Backspace` after them.
-- Basic 8-bit-inspired styling with a dark background, blocky tiles, bold buttons, and high-contrast feedback colors.
+- A final keyboard row with command keys before and after the letters.
+- Short on-screen labels, `Go` and `Del`, that still trigger `Enter` and `Backspace` behavior.
+- An 8-bit-inspired visual system with pixel fonts, square tiles, chunky black shadows, a dark CRT-style game panel, scanlines, and high-contrast feedback colors.
 
 ## Steps I Took
 
@@ -42,7 +45,9 @@ python3 -m http.server 8000
 6. Wired everything together in `src/main.js`, including click handlers and physical keyboard events.
 7. Fixed keyboard input so `Backspace` and `Enter` are handled as commands instead of being treated like regular letters.
 8. Added styles in `src/styles.js` to make the app readable, centered, and closer to an 8-bit game feel.
-9. Cleaned up remaining TODOs and checked that the JavaScript files parse correctly.
+9. Refined the UI with a CRT-style frame, dark terminal background, scanline overlay, pixel-style title treatment, square controls, and pressed-button states.
+10. Adjusted the on-screen keyboard so the command keys fit the retro layout while still using the correct game actions internally.
+11. Cleaned up remaining TODOs and checked that the JavaScript files parse correctly.
 
 ## Project Structure
 
