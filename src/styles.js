@@ -9,7 +9,7 @@ export function injectStyles() {
     }
 
     html {
-      background: #061536;
+      background: #2a0713;
     }
 
     body {
@@ -19,9 +19,9 @@ export function injectStyles() {
       place-items: center;
       overflow-x: hidden;
       background:
-        radial-gradient(circle at 50% 18%, rgba(82, 139, 255, 0.2), transparent 34%),
-        linear-gradient(135deg, #071224 0%, #061536 48%, #020509 100%);
-      color: #f8f8f2;
+        radial-gradient(circle at 50% 18%, rgba(255, 192, 203, 0.22), transparent 34%),
+        linear-gradient(135deg, #3a0b1a 0%, #2a0713 48%, #090105 100%);
+      color: #FFC0CB;
       font-family: "VT323", "Courier New", monospace;
       font-size: 24px;
     }
@@ -51,17 +51,17 @@ export function injectStyles() {
       width: min(92vw, 460px);
       padding: 28px;
       border: 8px solid #2c3138;
-      background: #050b0f;
+      background: #12030a;
       box-shadow:
         0 0 0 4px #000,
         12px 12px 0 #000,
-        inset 0 0 28px rgba(111, 195, 106, 0.12);
+        inset 0 0 28px rgba(243, 58, 106, 0.18);
       text-align: center;
     }
 
     h1 {
       margin: 0 0 18px;
-      color: #77c66e;
+      color: #F33A6A;
       font-family: "Press Start 2P", "Courier New", monospace;
       font-size: clamp(1.1rem, 5vw, 1.75rem);
       line-height: 1.35;
@@ -70,14 +70,14 @@ export function injectStyles() {
     }
 
     h1 span {
-      color: #ffffff;
+      color: #F33A6A;
     }
 
     .message {
       min-height: 30px;
       margin: 0 0 14px;
       font-weight: 700;
-      color: #fff27a;
+      color: #FFC0CB;
       letter-spacing: 1px;
       text-shadow: 2px 2px 0 #000;
     }
@@ -98,11 +98,11 @@ export function injectStyles() {
       aspect-ratio: 1;
       display: grid;
       place-items: center;
-      border: 3px solid #8a93a6;
+      border: 3px solid #F33A6A;
       border-radius: 0;
-      background: #081017;
+      background: #2a0713;
       box-shadow: 4px 4px 0 #000;
-      color: #f8f8f2;
+      color: #FFC0CB;
       font-size: 2rem;
       font-weight: 900;
       text-transform: uppercase;
@@ -117,13 +117,13 @@ export function injectStyles() {
     .present {
       background: #d6c94f;
       border-color: #fff27a;
-      color: #101820;
-      text-shadow: none;
+      color: #FFC0CB;
+      text-shadow: 2px 2px 0 #000;
     }
 
     .absent {
-      background: #1b1f2a;
-      border-color: #596579;
+      background: #3a0b1a;
+      border-color: #7f1f3b;
     }
 
     .keyboard {
@@ -154,9 +154,9 @@ export function injectStyles() {
       height: 44px;
       border: 3px solid #000;
       border-radius: 0;
-      background: #d6dde8;
+      background: #3a0b1a;
       box-shadow: 4px 4px 0 #000;
-      color: #101820;
+      color: #FFC0CB;
       font: inherit;
       font-weight: 900;
       cursor: pointer;
@@ -164,7 +164,7 @@ export function injectStyles() {
     }
 
     button:hover {
-      background: #ffffff;
+      background: #4f1025;
     }
 
     button:active {
@@ -180,7 +180,7 @@ export function injectStyles() {
     .restart {
       margin-top: 18px;
       padding: 0 18px;
-      background: #5fa8ff;
+      background: #F33A6A;
     }
   `;
 
